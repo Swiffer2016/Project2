@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/bootstrap.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<!-- the BODY element takes the #home ID -->
+<body id="home" data-spy="scroll" data-target="#main-nav">
+
+    <!-- NAVBAR -->
+    <nav id="#main-nav" class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="img/logo.png" width="60px" height="60px" alt="">
+                <!-- NEW d-inline & align-middle -->
+                <h3 class="d-inline align-middle">Winner</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" 
+            aria-expanded="false" aria-label="Navigation Bar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarMenu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ourMotto" class="nav-link">Motto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#activities" class="nav-link">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER section -->
+    <section id="bannerArea" class="py-5">
+        <div class="primary-overlay text-white">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-lg-6 pt-5 text-center">
+                        <h1 class="display-2 fw-bold mt-5 pt-5 ps-5">Just Do It To Reach Your Goal</h1>
+                        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, eligendi!</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/banner-img.png" class="img-fluid d-none d-lg-block" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NEWSLETTER section -->
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="info-header mb-5">
+                    <h1 class="text-primary pb-3 ps-5 text-center">Want to get your weekly newsletter?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-1">
+                    <!-- "form-control class even without a form tag!" -->
+                    <input type="text" class="form-control form-control-lg mb-resp" placeholder="Fullname">
+                </div>
+                <div class="col-md-4 mb-1">
+                    <input type="email" class="form-control form-control-lg mb-resp" placeholder="Email">
+                </div>
+                <!-- NEW d-grid (not on the button! on the div!) : to make the same width for the button on the 3rd column as the input tags -->
+                <div class="col-md-4 d-grid mb-1">
+                    <button type="button" class="btn btn-primary btn-block fw-bold"><i class="fas fa-sign-in-alt me-3"></i>Register
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOXES section -->
+    <section id="boxes" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card  text-center border-primary mb-resp border-warning border-2">
+                        <div class="card-body">
+                            <h3 class="text-primary">Think Different</h3>
+                            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore!</p>
+                            <a href="#" class="btn btn-primary btn-sm text-white fw-bold fs-5"><i class="fas fa-arrow-right me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card  text-center bg-warning mb-resp border-primary border-2">
+                        <div class="card-body">
+                            <h3 class="text-white">Open Happiness</h3>
+                            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore!</p>
+                            <a href="#" class="btn btn-outline-secondary btn-sm text-white fw-bold fs-5"><i
+                                    class="fas fa-arrow-right me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card  text-center border-primary mb-resp border-warning border-2">
+                        <div class="card-body">
+                            <h3 class="text-primary">You're Worth It</h3>
+                            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore!</p>
+                            <a href="#" class="btn btn-primary btn-sm text-white fw-bold fs-5"><i
+                                    class="fas fa-arrow-right me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card  text-center bg-warning mb-resp border-primary border-2">
+                        <div class="card-body">
+                            <h3 class="text-white">Just Do It</h3>
+                            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore!</p>
+                            <a href="#" class="btn btn-outline-secondary btn-sm text-white fw-bold fs-5"><i
+                                    class="fas fa-arrow-right me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOTTO section -->
+    <section id="ourMotto" class="py-5 text-center bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="info-header mt-5 mb-5">
+                        <h1 class="text-dark fw-bold pb-3">Your Only Limit Is Your Mind!</h1>
+                        <p class="lead pb-3">
+                            <h2 class="text-light fs-1">Never let your memories be greater than your dreams.</h2>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTIVITIES section -->
+    <section id="activities" class="my-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col bg-secondary rounded mb-4">
+                    <div class="info-header mb-5 mt-5">
+                        <h1 class="text-primary fw-bold pb-3">Activities</h1>
+                        <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos vero ad enim, minus et debitis nulla dolorum autem
+                        repellendus ullam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOXES ARE BACK section -->
+    <section id="boxes" class="my-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <!-- NEW class: shadow! -->
+                    <div class="card border-warning shadow p-3 mb-5 bg-white">
+                        <div class="body">
+                            <img src="img/person1.jpg" class="img-fluid w-50 mb-3" alt="">
+                            <h3>Running</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit conset. Ipsam, corporis?</p>
+                            <div class="d-flex justify-content-center">
+                                <!-- you "need" to add ANOTHER div after the d-flex div -->
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-facebook fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-twitter text-info fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-instagram text-warning fa-2x"></i>
+                                    </a>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <!-- NEW class: shadow! -->
+                    <div class="card border-primary shadow p-3 mb-5 bg-white">
+                        <div class="body">
+                            <img src="img/person2.png" class="img-fluid w-50 mb-3" alt="">
+                            <h3>Yoga</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit conset. Ipsam, corporis?</p>
+                            <div class="d-flex justify-content-center">
+                                <!-- you "need" to add ANOTHER div after the d-flex div -->
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-facebook fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-twitter text-info fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-instagram text-warning fa-2x"></i>
+                                    </a>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <!-- NEW class: shadow! -->
+                    <div class="card border-warning shadow p-3 mb-5 bg-white">
+                        <div class="body">
+                            <img src="img/person3.png" class="img-fluid w-50 mb-3" alt="">
+                            <h3>Football</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit conset. Ipsam, corporis?</p>
+                            <div class="d-flex justify-content-center">
+                                <!-- you "need" to add ANOTHER div after the d-flex div -->
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-facebook fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-twitter text-info fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-instagram text-warning fa-2x"></i>
+                                    </a>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <!-- NEW class: shadow! -->
+                    <div class="card border-primary shadow p-3 mb-5 bg-white">
+                        <div class="body">
+                            <img src="img/person4.png" class="img-fluid w-50 mb-3" alt="">
+                            <h3>Cycling</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit conset. Ipsam, corporis?</p>
+                            <div class="d-flex justify-content-center">
+                                <!-- you "need" to add ANOTHER div after the d-flex div -->
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-facebook fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-twitter text-info fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-instagram text-warning fa-2x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>   
+    </section>
+
+    <footer>
+        <p>Copyright
+            <span id="year"></span>
+        </p>
+    </footer>
+
+    <!-- JS to get current year in the footer -->
+    <script>
+        $("#year").text(new Date().getFullYear());
+    </script>
+    
+    
+
+
+
+</body>
+</html>
